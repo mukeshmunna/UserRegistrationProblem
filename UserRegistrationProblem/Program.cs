@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Windows.Markup;
 using UserRegistrationProblem;
 
@@ -9,6 +10,7 @@ namespace RegexOperations
         static string firstName = "Mukesh";
         static string lastName = "Mukkara";
         static string email = "abc@gmail.com";
+        private static string mobile="9098765432";
 
         private static void Main(string[] args)
         {
@@ -19,6 +21,8 @@ namespace RegexOperations
             validate.ValidateName(lastName);
             Console.WriteLine(email);
             validate.ValidateEmail(email);
+            Console.WriteLine(mobile);
+            validate.ValidateMobile(mobile);
 
         }
     }
