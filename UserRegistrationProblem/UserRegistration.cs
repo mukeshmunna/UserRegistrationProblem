@@ -12,6 +12,7 @@ namespace UserRegistrationProblem
         string nameRegex = "^[A-Z]{1}[a-z]{2,}$";
         string emailRegex = "^[a-z0-9]{1,}[._+-]{0,1}[a-z0-9]{0,}[@]{1}[a-z0-9]{1,}[.]{1}[a-z]{2,}[.]{0,1}[a-z]{0,}$";
         string mobileRegex = "^[0-9]{2}[ ][0-9]{10}";
+        string passwordRegex = "^[a-z0-9]{8}$";
 
         public void ValidateName(string name)
         {
@@ -46,6 +47,18 @@ namespace UserRegistrationProblem
                 Console.WriteLine("In valid");
             }
         }
+        public void ValidatePassword(string pass)
+        {
+            if (Regex.IsMatch(pass, passwordRegex))
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("In valid");
+            }
 
+        }
     }
 }
+

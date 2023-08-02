@@ -11,6 +11,7 @@ namespace RegexOperations
         static string lastName = "Mukkara";
         static string email = "abc@gmail.com";
         private static string mobile="9098765432";
+        static string password = "Mukesh@123";
 
         private static void Main(string[] args)
         {
@@ -23,6 +24,8 @@ namespace RegexOperations
             validate.ValidateEmail(email);
             Console.WriteLine(mobile);
             validate.ValidateMobile(mobile);
+            Console.WriteLine(password);
+            validate.ValidatePassword(password);
 
         }
     }
