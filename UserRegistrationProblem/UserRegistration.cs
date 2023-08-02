@@ -19,7 +19,7 @@ namespace UserRegistrationProblem
             }
             else
             {
-                Console.WriteLine("Not valid");
+                Console.WriteLine("In valid");
             }
         }
     }
