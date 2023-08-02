@@ -10,7 +10,7 @@ namespace RegexOperations
         static string lastName = "Mukkara";
         static string email = "abc@gmail.com";
         private static string mobile="9098765432";
-        static string password = "Mukesh1122";
+        static string password = "1234@xyz";
         private static void Main(string[] args)
         {
             UserRegistration validate = new UserRegistration();
