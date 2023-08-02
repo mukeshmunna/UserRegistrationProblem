@@ -5,15 +5,16 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace UserRegistrationProblem
+namespace RegexOperations.UserRegistrationSystem
 {
-    internal class UserRegistration
+    public class UserRegistration
     {
         string nameRegex = "^[A-Z]{1}[a-z]{2,}$";
         string emailRegex = "^[a-z0-9]{1,}[._+-]{0,1}[a-z0-9]{0,}[@]{1}[a-z0-9]{1,}[.]{1}[a-z]{2,}[.]{0,1}[a-z]{0,}$";
-        string mobileRegex = "^[0-9]{2}[ ][0-9]{10}";
-        string passwordRegex = "^[a-z0-9]{8}$";
-
+        string mobileRegex = "^[0-9]{2}[ ][0-9]{10}$";
+        //
+        string passwordRegex = "^(?=.*[A-Z])[A-Za-z0-9]{8,}$";
+        //
         public void ValidateName(string name)
         {
             if (Regex.IsMatch(name, nameRegex))
@@ -57,8 +58,6 @@ namespace UserRegistrationProblem
             {
                 Console.WriteLine("In valid");
             }
-
         }
     }
 }
-

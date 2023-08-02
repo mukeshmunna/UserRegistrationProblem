@@ -1,7 +1,6 @@
-﻿using System;
-using System.Reflection;
+﻿using RegexOperations.UserRegistrationSystem;
+using System;
 using System.Windows.Markup;
-using UserRegistrationProblem;
 
 namespace RegexOperations
 {
@@ -12,7 +11,6 @@ namespace RegexOperations
         static string email = "abc@gmail.com";
         private static string mobile="9098765432";
         static string password = "Mukesh@123";
-
         private static void Main(string[] args)
         {
             UserRegistration validate = new UserRegistration();
@@ -26,7 +24,6 @@ namespace RegexOperations
             validate.ValidateMobile(mobile);
             Console.WriteLine(password);
             validate.ValidatePassword(password);
-
         }
     }
 }
